@@ -32,7 +32,7 @@ section{
 }
 
 h1 {
-    color: rgb(0,0, 255));
+    color: rgb(0,0, 255);
     margin-bottom: 15px;
 }
 
@@ -108,5 +108,22 @@ img{
     height: auto;
     display: block;
     margin: 20px auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
 }
 
