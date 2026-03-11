@@ -1,0 +1,127 @@
+<!doctype html> <!--esta declaração informa que estamos utilizando a versão HTML5.-->
+<html lang="pt-br"> <!--elemento raiz que envolve todo o código HTML do projeto-->
+  <head> <!--contém metadados:informações para o navegador ler-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aula Teórica sobre os 3 pilares do front-end (HTML, CSS e Javascript)"
+    />
+    <title>Teoria base front-end</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body> <!--o corpo do documento, para interação do usuário-->
+    <header> <!--seção de cabeçalho da página, logo, menu e título principal são colocados aqui-->
+      <h1> <!--o conteúdo mais importante da página-->
+        Título principal (h=heading)
+      </h1>
+      <p>
+        Eu sou um <strong>parágrafo</strong>
+        <br>
+        Eu sou um <strong!>parágrafo</strong>
+      </p>
+    </header>
+
+    <main> <!--conteúdo principal-->
+      <section> <!--tag semântica para dividir os conteúdos em seções temáticas-->
+
+        <h2> <!--subtítulo da página-->
+          formatação do texto
+        </h2>
+        <p>
+            posso utilizar a tag <em>em</em> para dar ênfase em itálico. <br> <!--quebra de linha--> Também posso utilizar a tag <abbr title="HyperText Markup Language">HTML</abbr>para explicar abreviações ao passar o mouse.
+          </p>
+      </section>
+
+      <section>
+        <h2>Listas e elementos retráteis</h2>
+
+        <ol><!--lista ordenada (numerada)-->
+          <li>Primeiro ítem da lista ordenada</li>
+          <li>Segundo ítem da lista ordenada</li>
+        </ol>
+
+        <ul><!--lista não ordenada (pontuada)-->
+          <li>Primeiro ítem de uma lista com marcadores<li>
+          <li>Segundo ítem da lista não ordenada</li>
+        </ul>
+            
+        <details><!--cria um elemento retrátil que esconde/oculta as informações-->
+          <summary><!--o título clicável do elemento details-->
+            Clique aqui para ver o conteúdo
+          </summary>
+          <h3>Agora você consegue ver o conteúdo que estava oculto na tag details.</h3>
+        </details>
+      </section>
+
+      <section>
+        <h2>
+          Mídia e Imagens
+        </h2>
+        <figure> <!--agrupar a imagem junto com a legenda-->
+          <img src="/WhatsApp-Image-2021-12-16-at-16.42.03.jpeg" alt="descrição da imagem para acessibilidade"> 
+          <figcaption>
+            é onde colocamos a legenda da imagem
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Tabelas e informação</h2>
+        <table border="1"><!--cria uma tabela e o atributo border define a expessura da borda-->
+          <thead> <!--cabeçalho da tabela-->
+            <tr>
+              <th>A</th>
+              <th>B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>dado 1</td>
+              <td>dado 2</td>
+            </tr>
+            <tr>
+              <td>dado 2</td>
+            </tr>
+          </tbody>
+          <tfoot> <!--rodapé da tela-->
+            <tr>
+              <td colspan="2">Célula ocupa 2 colunas usando colspan</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Interação com o usuário</h2>
+        <form><!--container para coleta de dados do usuário-->
+          <fieldset><!--agrupa elementos relacionados de um fomulário-->
+            <legend><!--legenda do fieldset-->
+              Título do grupo de campos
+            </legend>
+          
+            <label for="name"><!--rótulo para um campo de entrada, ligada pelo id-->
+              Nome:
+            </label>
+            <input type="text" id="name" placeholder="Digite seu nome aqui"> <!--etrada de texto--> 
+            <br><br><hr>
+
+            <label>Escolha uma opção</label> <br>
+            <input type="radio" name="opcao" value="1">Opção radio (escolha única)<br>
+            <input type="checkbox" name="check" value="2">Checkbox (múltipla escolha)<br>
+            <br><br><hr>
+
+            <label>Comentários:</label><br>
+            <textarea rows="5" cols="100">Esta é a área de texto para comentários</textarea>
+          </fieldset>
+   
+          <button type="button" onclick="alert('Enviado com sucesso')">Enviar feedback</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h2>&copy; 2026 - Todos os direitos reservados. O símbolo é feito com a entidade &amp;copy;.</h2>
+      <p>Visite meu <a href="" target="_blank">perfil no github</a>para saber mais.</p>
+    </footer>
+  </body>
+</html>
