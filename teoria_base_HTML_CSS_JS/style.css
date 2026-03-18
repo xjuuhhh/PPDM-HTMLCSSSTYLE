@@ -127,3 +127,8 @@ nav ul li a{
     font-weight: bold;
 }
 
+body.darkMode{
+    background-color: black;
+    color: white;
+}
+
