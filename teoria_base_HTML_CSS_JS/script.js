@@ -25,3 +25,16 @@ function envio() {
     localmensagem.style.fontWeight = "bold";
 }
 
+//modo tela escura
+const btn = document.getElementById('theme-toggle'); //seleciona o botão pelo id
+btn.addEventListener('click', () =>{ //adiciona escutador de eventos para o clique
+    // function nomeDaFunção(){}
+    document.body.classList.toggle('darkMode'); //o método toggle adiciona a classe se ela não existir e remove se ela já estiver lá
+    document.documentElement.classList.toggle('darkMode')
+    if(document.documentElement.classList.contains('darkMode')){//muda o texto do botão conforme o tema
+        btn.textContent = "Ativa modo claro";
+    } else {
+        btn.textContent = "Ativa modo escuro";
+    }
+});
+
